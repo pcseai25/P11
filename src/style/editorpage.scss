@@ -1,0 +1,46 @@
+.mainWrap{
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    height: 90vh;
+    .aside{
+        background: #1c1e29;
+        padding: 16px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        .asideInner{
+            flex: 1;
+            .clientsList{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .client{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                font-weight: bold;
+            }
+            .userName{
+                margin-top: 10px;
+            }
+        }
+        >button{
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            background-color: whitesmoke;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            width: 150px;
+            &:hover{
+                background-color: #5e17eb;
+            }
+        }
+    }
+}
+
